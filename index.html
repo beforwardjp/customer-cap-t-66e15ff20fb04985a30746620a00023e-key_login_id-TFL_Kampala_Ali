@@ -1,0 +1,1174 @@
+<!--?xml version="1.0" encoding="UTF-8" ?--><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"><head>
+
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="googlebot" content="noindex">
+<meta name="slurp" content="noindex">
+
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-store">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<title>Welcome to BE FORWARD's CAP (Car Arrival Progress) page!</title>
+<link rel="stylesheet" href="css/bf-iconfont.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script async="" src="js/gtm.js"></script><script async="" src="js/uwt.js"></script><script async="" src="js/gtm_1.js"></script><script src="js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery-1.4.2.min.js"><\/script>')</script><script src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.deserialize.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/customer.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css">
+	<script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/translate.css">
+
+
+	<meta name="robots" content="max-image-preview:large">
+
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MGVSKW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MGVSKW');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Twitter universal website tag code -->
+<script>
+	!function(e,t,n,s,u,a){
+		e.twq||(s=e.twq=function(){
+			s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+		},
+		s.version='1.1',
+		s.queue=[],
+		u=t.createElement(n),
+		u.async=!0,
+		u.src='//static.ads-twitter.com/uwt.js',
+		a=t.getElementsByTagName(n)[0],
+		a.parentNode.insertBefore(u,a)
+		)
+	}(window,document,'script');
+	// Insert Twitter Pixel ID and Standard Event data below
+	twq('init','nviie');
+</script>
+<!-- End Twitter universal website tag code -->
+
+</head>
+<body>
+	<!-- nl -->
+	<div id="outline">
+		<div id="header_cs">
+			<div id="hline1_wrap">
+				<h1 id="logo">
+					<a href="/"><img src="images/logo_bf.gif" alt="Japan Used Cars Exporter Be Forward"></a>
+				</h1>
+				<div id="global_info_area">
+					<div id="contact">
+						<h5><img src="images/bg_header.gif"></h5>
+						<p>1-32-2 Kojimacho, Chofu City, Tokyo 182-0026 Japan<br>
+							<img src="images/icon_tel.gif" alt="TEL"> +81 42 440 3440
+							<img class="contact-mail" src="images/icon_mail.gif" alt="MAIL"> <a href="mailto:top@beforward.jp">top@beforward.jp</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- *** END-hline1_wrap *** -->
+			<div id="contents_header_cs">
+				<div class="title">BE FORWARD: Japanese Used Cars for Sale</div>
+			</div><!-- *** contents_header_wrap-END *** -->
+		</div><!-- *** header-END *** -->
+		
+
+
+<script type="text/javascript" src="js/capfollowmail.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+$(document).ready(function() {
+	var light_settings = {
+		imageLoading: '/images/lightbox/lightbox-ico-loading.gif',
+		imageBtnPrev: '/images/lightbox/lightbox-btn-prev.gif',
+		imageBtnNext: '/images/lightbox/lightbox-btn-next.gif',
+		imageBtnClose: '/images/lightbox/lightbox-btn-close.gif',
+		imageBlank: '/images/lightbox/lightbox-blank.gif'
+	};
+	$('#gallery a').lightBox(light_settings);
+	$('#imgMain a').lightBox(light_settings);
+	
+	//Language swicher
+	$('#lang-switch-area').css("display", "none");
+
+	$('#lang-switch').mouseover(function(){
+		$('#lang-switch-area').css('display', 'block');
+	});
+
+	$('#lang-switch').mouseout(function(){
+		$('#lang-switch-area').css('display', 'none');
+	});
+
+	$('#lang-switch-area').mouseout(function(){
+		$('#lang-switch-area').css('display', 'none');
+	});
+
+/*
+	$('#lang-switch').on({
+		mouseover:function(){
+			alert("mouseover");
+			$('#lang-switch-area').css("display", "block");
+		},
+		mouseout:function(){
+			alert("mouseout");
+			$('#lang-switch-area').css("display", "none");
+		}
+	});
+
+	$('#lang-switch-area').on({
+		mouseout:function(){
+			$('#lang-switch-area').css("display", "none");
+		}
+	});
+	*/
+
+	// 言語変更処理(ヘッダーメニューでの言語変更)
+    $('#lang-switch-menu li').click(function(){
+		// 選択した言語を取得
+		var lang = $(this).attr('data-lang');
+		set_language_cookie(lang);
+    });
+});
+
+//]]>
+</script>
+
+<style>
+a.select_lang {color:#000;}
+.select_lang {padding:0 5px;}
+
+#productionym_window {
+	position: absolute;
+	width: 340px;
+	height: 212px;
+	background-color: #FFF;
+	border: 5px solid #EC6D02;
+	display: none;
+}
+
+#productionym_window .title{
+	height: 20px;
+	font-weight: bold;
+	padding: 3px;
+	background: transparent url("images/inquiry_head_bg.jpg") repeat-x scroll 0 0;
+	font-size: 12px;
+	text-align: left;
+}
+
+#productionym_window #productionym_target{
+	padding: 0px;
+}
+
+.orange {
+	color: #f28705;
+}
+
+.green {
+	color: #008000;
+}
+
+.black{
+	color: #000000;
+}
+
+.red{
+	color: #F00;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.lh15{
+	line-height: 1.5em;
+}
+table{
+	border-spacing: 0px;
+}
+
+.contents_table table.listcs{
+	border-collapse: separate;
+}
+
+div.tip {
+	color: #3A87AD;
+	font: 11px Arial, sans-serif;
+	text-decoration: none;
+	padding: 5px 7px;
+	position: relative;
+	display: inline-block;
+	transition: border-color .218s;
+	background: #D9EDF7;
+	background: -webkit-gradient(linear,0% 40%,0% 70%,from(#D9EDF7),to(#D9EDF7));
+	background: -moz-linear-gradient(linear,0% 40%,0% 70%,from(#d9edf7),to(#d9edf7));
+	border: solid 1px #BCE8F1;
+	border-radius: 2px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	line-height: 110%;
+}
+
+.contents_table table.listcs td.center{
+	text-align: center;
+	padding: 5px;
+}
+
+#cap_inquiry {
+	display: inline-block;
+	padding: 15px;
+	font-size: 13px;
+}
+
+#cap_inquiry a.button-orange {
+    color: #fff;
+    font: 14px/16px Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    width: 74px;
+    height: 26px;
+    line-height: 26px;
+    padding: 1px 2px 1px 20px;
+    position: relative;
+    display: inline-block;
+    -webkit-transition: border-color .218s;
+    -moz-transition: border .218s;
+    -o-transition: border-color .218s;
+    transition: border-color .218s;
+	background: url("images/icon_inquiry_mail.png") 7px 50% no-repeat,-webkit-gradient(linear, 0 0, 0 100%, from(#faa51a), to(#f47a20));
+	background: url("images/icon_inquiry_mail.png") 7px 50% no-repeat,linear-gradient(#faa51a, #f47a20);
+	background-color: #ff8300;
+    border: solid 1px #d98405;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+	cursor: pointer;
+}
+
+#cap_inquiry a.button-orange:hover,
+#cap_inquiry a.button-orange:active {
+    color: #fff;
+	background: url("images/icon_inquiry_mail.png") 7px 50% no-repeat,-webkit-gradient(linear, 0 100%, 0 0, from(#f88e11), to(#f06015));
+	background: url("images/icon_inquiry_mail.png") 7px 50% no-repeat,linear-gradient(#f88e11, #f06015);
+	background-color: #f88e11;
+	text-decoration: none;
+    -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2) -webkit-box-shadow:0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+#cap_inquiry a.button-orange:visited {
+	color: #FFF;
+}
+
+#cap_inquiry a.button-gray {
+    color: #fff;
+    font: 14px/16px Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    width: 74px;
+    height: 26px;
+    line-height: 26px;
+    padding: 1px 2px 1px 20px;
+    position: relative;
+    display: inline-block;
+    -webkit-transition: border-color .218s;
+    -moz-transition: border .218s;
+    -o-transition: border-color .218s;
+    transition: border-color .218s;
+	background: url("images/icon_inquiry_mail.png") 7px 50% no-repeat,-webkit-gradient(linear, 0 0, 0 100%, from(#C0C0C0), to(#808080));
+	background: url("images/icon_inquiry_mail.png") 7px 50% no-repeat,linear-gradient(#C0C0C0, #808080);
+	background-color: #808080;
+    border: solid 1px #808080;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+
+.gray-area {
+	width: 74%;
+	min-height: 90px;
+    margin: 10px auto;
+    background-color: #F2F2F2;
+}
+
+.send_mail_complete {
+    color: red;
+    font-weight: bold;
+	margin: 15px 0 0 0;
+}
+
+#main_full div.status_table table.listcs{
+	
+	border-collapse: separate;
+}
+
+.title_consignee_notify {
+	float: left;
+	width: 180px
+}
+.titlecsmid .pi_amend_form {
+	text-align: right;
+	margin: 2px;
+}
+
+/*
+	lang switcher
+*/
+
+.inline-block{
+	display: inline-block;
+}
+
+#header:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#lang-switch{
+	float: right;
+	width: 205px;
+}
+
+#lang-switch .lang-english {
+    background:url('images/icon_language.png') no-repeat 0px -27px;
+    padding-left:18px;
+}
+
+#lang-switch .lang-russian {
+    background:url('images/icon_language.png') no-repeat 0px -58px;
+    padding-left:18px;
+}
+
+#lang-switch .lang-french {
+    background:url('images/icon_language.png') no-repeat 0px -89px;
+    padding-left:18px;
+}
+
+#lang-switch .lang-georgian {
+    background:url('images/icon_language.png') no-repeat 0px -119px;
+    padding-left:18px;
+}
+
+#lang-switch .lang-portuguese {
+    background:url('images/icon_language.png') no-repeat 0px -151px;
+    padding-left:18px;
+}
+
+#lang-switch .lang-spanish {
+    background:url('images/icon_language.png') no-repeat 0px -182px;
+    padding-left:18px;
+}
+
+#lang-switch .lang-swahili {
+    background:url("images/icon_language.png") no-repeat 0px -215px;
+    padding-left:18px;
+}
+
+#lang-switch .lang-arabic {
+    background:url("images/icon_language.png") no-repeat 0px -246px;
+    padding-left:18px;
+}
+
+#lang-switch-wrapper {
+	position: relative;
+	width: 96px;
+	padding: 0 6px;
+	padding-right: 16px;
+	text-align:left;
+	border-radius: 2px;
+	background-color: #ededed;
+	background-image: url('images/icon_language.png');
+	background-position: 106px 6px;
+	background-repeat: no-repeat;
+}
+#lang-switch-wrapper > a {
+	color: #000;
+	text-decoration: none;
+}
+
+#lang-switch-area {
+	position: absolute;
+	top: 0px;
+	right: 0;
+}
+
+#lang-switch-menu {
+	width: 118px;
+	padding: 3px 0 0 0;
+	background: transparent;
+}
+
+#lang-switch-menu li{
+	display: block;
+	float: none;
+	margin: 0;
+	padding: 4px 6px;
+	background: #ededed;
+	border-top: 1px solid #d7d7d7;
+}
+
+#lang-switch-menu li > a{
+	color: #000;
+	text-decoration: none;
+}
+
+#lang-switch-menu li > a:hover{
+	text-decoration: underline;
+}
+#lang-switch-menu .lang-active{
+	display: none;
+}
+
+	#lang-switch-english a {
+		background:url('images/icon_language.png') no-repeat 0px -27px;
+		padding-left:18px;
+	}
+
+	#lang-switch-russian a {
+		background:url('images/icon_language.png') no-repeat 0px -58px;
+		padding-left:18px;
+	}
+
+	#lang-switch-french a {
+		background:url('images/icon_language.png') no-repeat 0px -88px;
+		padding-left:18px;
+	}
+
+	#lang-switch-georgian a {
+		background:url('images/icon_language.png') no-repeat 0px -118px;
+		padding-left:18px;
+	}
+
+	#lang-switch-portuguese a {
+		background:url('images/icon_language.png') no-repeat 0px -151px;
+		padding-left:18px;
+	}
+
+	#lang-switch-spanish a {
+		background:url('images/icon_language.png') no-repeat 0px -182px;
+		padding-left:18px;
+	}
+
+	#lang-switch-swahili a {
+		background:url('images/icon_language.png') no-repeat 0px -213px;
+		padding-left:18px;
+	}
+
+	#lang-switch-arabic a {
+		background:url('images/icon_language.png') no-repeat 0px -245px;
+		padding-left:18px;
+	}
+
+</style>
+
+<div id="container_full">
+
+	<div id="header" style="text-align:right; background:#ccc; padding:2px;">
+
+		<!--
+		<b class="select_lang">Select Languages: </b>
+		<b class="select_lang">English</b>
+				<a href="/ru/customer/cap?t=66e15ff20fb04985a30746620a00023e&key_login_id=TFL_Kampala_Ali" class="select_lang">Русский</a>		 -->
+		<div id="lang-switch">
+			<span class="bold">Language�&nbsp;:�&nbsp;</span>
+			<div id="lang-switch-wrapper" class="inline-block">
+
+				<a href="#" class="lang-english" style="display: inline;">English</a>
+				
+				<div id="lang-switch-area">
+					<ul id="lang-switch-menu">
+						<li id="lang-switch-english" class="lang-active" data-lang="en"><a href="/customer/cap?t=66e15ff20fb04985a30746620a00023e&amp;key_login_id=TFL_Kampala_Ali">English</a></li>
+						<li id="lang-switch-portuguese" class="" data-lang="pt"><a href="/pt/customer/cap?t=66e15ff20fb04985a30746620a00023e&amp;key_login_id=TFL_Kampala_Ali">Português</a></li>
+						<li id="lang-switch-french" class="" data-lang="fr"><a href="/fr/customer/cap?t=66e15ff20fb04985a30746620a00023e&amp;key_login_id=TFL_Kampala_Ali">Français</a></li>
+						<li id="lang-switch-swahili" class="" data-lang="sw"><a href="/sw/customer/cap?t=66e15ff20fb04985a30746620a00023e&amp;key_login_id=TFL_Kampala_Ali">Kiswahili</a></li>
+						<li id="lang-switch-spanish" class="" data-lang="es"><a href="/es/customer/cap?t=66e15ff20fb04985a30746620a00023e&amp;key_login_id=TFL_Kampala_Ali">Español</a></li>
+						<li id="lang-switch-russian" class="" data-lang="ru"><a href="/ru/customer/cap?t=66e15ff20fb04985a30746620a00023e&amp;key_login_id=TFL_Kampala_Ali">�&nbsp;усский</a></li>
+						<li id="lang-switch-georgian" class="" data-lang="ge"><a href="/ge/customer/cap?t=66e15ff20fb04985a30746620a00023e&amp;key_login_id=TFL_Kampala_Ali">ქა�&nbsp;თული</a></li>
+						<li id="lang-switch-arabic" class="" data-lang="ar"><a href="/ar/customer/cap?t=66e15ff20fb04985a30746620a00023e&amp;key_login_id=TFL_Kampala_Ali">العربية</a></li>
+					</ul>
+				</div>
+				<!-- lang-switch-area -->
+			</div>
+			<!-- /lang-switch-wrapper -->
+		</div>
+		<!-- /lang-switch -->
+
+	</div>
+	<!-- /header -->
+
+
+
+
+
+	<div class="contents_message">
+	<div class="titlecs_message">MESSAGE</div>
+	<div class="message_left">
+		<div class="sales">
+			
+			<img src="images/2.joseph_cap.jpg" border="0" alt="" width="96" height="96">
+
+			<p>JOSEPH</p>
+		</div>
+	</div>
+	<!-- *** action_left-END *** -->
+	<div class="message_right">
+		<div class="titlecsmid">We are arranging the documents dispatch for you.</div>
+	</div>
+	<!-- *** action_right-END *** -->
+	<div style="clear: both;"></div>
+</div>
+<!-- *** message-END *** -->
+	<div id="main_full">
+		<div class="titlecs">STATUS</div>
+		<div class="status_table">
+			<table class="listcs" summary="">
+				<tbody>
+					<tr>
+						<th class="w10">Stage</th>
+						<th class="w30">Action Taker</th>
+						<th class="w10">Status</th>
+						<th class="w50">Action</th>
+					</tr>
+															<tr>
+						<th rowspan="7">Booking</th>
+						<td>BE FORWARD</td>
+						<td>Completed</td>
+						<td class="grey">Your Cap is now available.</td>
+					</tr>
+					<tr>
+
+						<td>BE FORWARD</td>
+						<td>Completed</td>
+						<td class="grey">Reflect Document delivery address, confirmed you by email, on to CAP.</td>
+					</tr>
+					<tr>
+						<td>BE FORWARD</td>
+						<td>Completed</td>
+						<td class="grey">Booking Department approached shipping line for vessel booking.</td>
+					</tr>
+					<tr>
+						<td>BE FORWARD</td>
+						<td>Completed</td>
+						<td class="grey">Uploaded Export Certificate on to CAP.</td>
+					</tr>
+					
+					<tr>
+						<td>SHIPPING COMPANY</td>
+						<td>Completed</td>
+						<td class="grey">Allocated a vessel to your vehicle (confirmed our Booking Department's request).</td>
+					</tr>
+					<tr>
+						<td>BE FORWARD / CAP</td>
+						<td>Completed</td>
+						<td class="grey">Reflect shipping company's vessel plan on to CAP.</td>
+					</tr>
+					<tr>
+						<td>BE FORWARD</td>
+						<td>Completed</td>
+						<td class="grey">Uploaded Invoice on to CAP.</td>
+					</tr>
+					<tr>
+						<th style="background-color:#fff;">Departure</th>
+						<td>SHIPPING COMPANY</td>
+						<td>Completed</td>
+						<td class="grey">Comfirmed the loading of your vehicle to the vessel.</td>
+					</tr>
+					<tr>
+						<th rowspan="3" style="background-color:#fff;">B/L</th>
+						<td>BF DOCUMENT CENTER</td>
+						<td>Completed</td>
+						<td class="grey">Uploaded B/L on to CAP.</td>
+					</tr>
+					<tr>
+						<td>You!�&nbsp;�&nbsp;(Customer)�&nbsp;�&nbsp;<span class="label label-important">Your Action</span></td>
+						<td>Completed</td>
+						<td class="grey">Proofread B/L documents and gave feedbacks to BE FORWARD.</td>
+					</tr>
+					<tr>
+						<td>BF DOCUMENT CENTER</td>
+						<td>Completed</td>
+						<td class="grey">Completed to reflect all customer's feedbacks on B/L.</td>
+					</tr>
+					<tr>
+						<th style="background-color: #fff;">Dispatch</th>
+						<td>BF DOCUMENT CENTER</td>
+						<td>
+							
+													</td>
+						<td class="grey">Sent out B/L documents and reflected tracking number on CAP.</td>
+					</tr>
+
+
+
+
+					</tbody>
+			</table>
+
+	
+	<div class="gray-area">
+		<div id="cap_inquiry">
+			<div style="margin-bottom: 15px;">
+				<span style="background:url(images/icon_info.png) no-repeat center; padding: 8px 10px;"></span>
+				<span>Would you like to use our Clearing, Forwarding and other local services for your convenience?</span>
+			</div>
+							<a id="cap_inquiry_button" class="button-gray">Inquiry</a>
+				<p class="send_mail_complete">You will receive an email about our local services shortly.</p>
+					</div>
+	</div>
+		</div>
+	</div><!-- *** STATUS AND MESSAGE-END *** -->
+
+	<div id="main_full">
+		<div class="titlecs">INFORMATION</div>
+		<div id="main_left">
+			<div class="contents_table" style="padding:0 0 10px 0; margin: 0 0 -5px 0;">
+				<div class="titlecsmid">Shipping information(Transship)</div>
+				<table class="listcs" summary="">
+					<tbody><tr class="odd">
+						<th><div class="relative">Carrier</div></th>
+						<td>MOL�&nbsp;(Mitsui O.S.K. Lines, Ltd.)</td>
+					</tr>
+					<tr>
+						<td colspan="2"><h3 class="shipping_departure">Departure</h3></td><td>
+					</td></tr>
+					<tr class="odd">
+						<th><div class="relative">Vessel Name<img class="icon_loadconfirmed" src="images/load_confirmed.gif" alt="Load Confirmed"></div></th>
+						<td>ASTRAL ACE�&nbsp;(V-0388A)</td>
+					</tr>
+					<tr class="even">
+						<th>Port of Loading</th>
+						<td>LAEM CHABANG�&nbsp;/�&nbsp;THAILAND</td>
+					</tr>
+					<tr class="odd">
+						<th>ETD(Estimated Time of Departure)</th>
+						<td>11-Oct-2024</td>
+					</tr>
+					<tr><td colspan="2">
+						<h3 class="shipping_arrival">Arrival</h3>
+					</td><td>
+					</td></tr><tr class="odd">
+						<th><div class="relative">Vessel Name</div></th>
+						<td>TBA�&nbsp;(V-TBA)</td>
+					</tr>
+					<tr class="even">
+						<th>Port of Discharge</th>
+						<td>MOMBASA</td>
+					</tr>
+					<tr class="odd">
+						<th>ETA(Estimated Time of Arrival)</th>
+						<td>16-Nov-2024</td>
+					</tr>
+					<tr>
+						<td colspan="2" style="border:none;">
+							<p class="transship_message">
+								This transship(re-loading to another vessel) does<br>not require an amendment of vessel name on your BL.
+							</p>
+						</td>
+					</tr><tr>
+				</tr></tbody></table>
+			</div>
+		</div>
+		<div id="main_right">
+			<div class="contents_table" style="margin: 0 0 -20px 0;">
+				<div class="titlecsmid">Documents</div>
+				<table id="table_document_list" class="listcs" summary="">
+					<tbody><tr>
+						<th>
+							<div class="relative">
+								B/L								<span id="blhold">
+									<img class="icon_blhold" src="images/bl_hold.gif" alt="B/L HOLD">								</span>
+							</div>
+						</th>
+						<td>
+												</td>
+					</tr>
+					
+											
+																													<tr>
+								<th>Export Certificate</th>
+								<td>
+																</td>
+							</tr>
+																																													
+															<tr>
+								<th>Invoice</th>
+								<td>
+																	<a href="3142892INVOICE.pdf" rel="external">
+									<img class="pdf-icon" src="images/pdf_icon.gif" width="15" height="15" alt="PDF">
+									Download
+								</a></td>
+							</tr>
+									
+									
+																																									</tbody></table>
+				<p style="margin-left: 7.5px; text-align: left;">To open the B/L, you need Adobe Reader. Please click <a href="http://get.adobe.com/reader/" target="_blank">here</a> to download it.</p>
+			</div>
+			<!-- *** Documents-END *** -->
+
+
+
+
+			<div class="contents_table" style="margin: 0 0 -20px 0;">
+				<div class="titlecsmid">Enrollment</div>
+				<table class="listcs" summary="">
+					<tbody><tr class="odd">
+						<td>CB2 CFS</td>
+					</tr>
+				</tbody></table>
+			</div>
+			<!-- *** Enrollment-END *** -->
+
+
+
+		</div>
+		<div style="clear: both;"></div>
+		<div style="text-align:left; margin: 0px 10px 10px 10px; text-align:left; color: red; padding: 10px 10px;">
+			<span style="background:url(images/icon_info.png) no-repeat left center;padding: 8px 10px;float:left;"></span>
+			<div>Shipping schedules may suddenly change for certain reasons, such as shipping companies dropping some ports or the name of the ships change, etc.
+			</div>
+		</div>
+			</div>
+	<div id="main_full">
+		<div class="titlecs">DOCUMENT</div>
+		<div id="main_left">
+			<div class="contents_table">
+				<div class="titlecsmid">DOCUMENT DELIVERY ADDRESS</div>
+				<table class="listcs" summary="">
+					<tbody>
+						<tr class="odd">
+							<th>Name</th>
+							<td>Kenya Transfreight Logistics Ltd</td>
+						</tr>
+						<tr class="even">
+							<th>Address</th>
+							<td>Consolbase Bldg, 2nd Floor Refinery Road, Changamwe</td>
+						</tr>
+						<tr class="odd">
+							<th>City</th>
+							<td>Mombasa</td>
+						</tr>
+						<tr class="even">
+							<th>Country</th>
+							<td>Kenya</td>
+						</tr>
+						<tr class="odd">
+							<th>Phone number1</th>
+							<td>+254 731 401456</td>
+						</tr>
+						<tr class="even">
+							<th>Phone number2</th>
+							<td>+254 793 599134</td>
+						</tr>
+						<tr class="odd">
+							<th>Phone number3</th>
+							<td>+254 722 746866</td>
+						</tr>
+						<tr class="even">
+							<th>Fax number</th>
+							<td></td>
+						</tr>
+						<tr class="odd">
+							<th>Cell-phone number</th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<div style=" margin-top:15px;margin-left:10px; text-align:left; color: red;">
+					<span style="background:url(images/icon_info.png) no-repeat left center;padding: 8px 10px;float:left;"></span>
+					<div style="padding-left:20px;">
+						For a prompt document delivery, please let us know detailed "Physical address" and avoid "P.O.Box address" or "oversimplified address"
+					</div>
+				</div>
+			</div>
+			<!-- *** DHL delivery address-END *** -->
+		</div>
+		<div id="main_right">
+			<div class="contents_table">
+				<div class="titlecsmid">Document tracking number</div>
+				<table class="listcs" summary="">
+					<tbody>
+						<tr class="odd">
+							<th>Tracking Number</th>
+							<td>
+Please wait.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+<div class="contents_table">
+    <div class="titlecsmid">Document Center</div>
+    <table class="listcs" summary="">
+        <tbody>
+        <tr class="odd">
+            <th>Name</th>
+            <td>STANMORE</td>
+        </tr>
+        <tr class="even">
+            <th>Address</th>
+            <td>TAARA PLAZA, 2nd Floor,Archbishop Mackarios Cls,P.O. BOX 81540-80100</td>
+        </tr>
+        <tr class="odd">
+            <th>City</th>
+            <td>Mombasa</td>
+        </tr>
+        <tr class="even">
+            <th>Country</th>
+            <td>Kenya</td>
+        </tr>
+        <tr class="odd">
+            <th>Phone number1</th>
+            <td>254 41 2315631 </td>
+        </tr>
+        <tr class="even">
+            <th>Phone number2</th>
+            <td>254 722 613 210</td>
+        </tr>
+        <tr class="odd">
+            <th>Phone number3</th>
+            <td>726 095 924</td>
+        </tr>
+        <tr class="even">
+            <th>Email</th>
+            <td>admin@stanmore.co.ke</td>
+        </tr>
+        <tr class="odd">
+            <th>Url</th>
+            <td></td>
+        </tr>
+        <tr class="even">
+            <th>Other Infomation</th>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+    <div style=" margin-top:15px;margin-left:10px; text-align:left; color: red;">
+        <span style="background:url(images/icon_info.png) no-repeat left center;padding: 8px 10px;float:left;"></span>
+        <div style="padding-left:20px;">
+            Above mentioned Document center issue's your B/L and Dispatch documents to your Delivery address so please note.
+        </div>
+    </div>
+</div>
+			</div>
+			<!-- *** DHL tracking number-END *** -->
+		</div>
+        <div style="clear: both;"></div>
+        <div class="warning" style="text-align:center;">
+            <span>
+                <img src="images/red24_e.png">
+                <p class="warning_str1">
+                    For Actual Arrival Date of the above vessel, please contact the above mentioned Document Center.<br>
+                    More information about the <a href="/document_processing_centers#port32" class="red" target="_blank">DOCUMENT CENTER (Click here)</a>
+                </p>
+                <p class="warning_str2" style="text-align: center;">
+                </p>
+            </span>
+        </div>
+	</div>
+	<div id="main_full">
+		<div class="titlecs">CONSIGNEE/NOTIFY PARTY OF YOUR REQUEST</div>
+		<div id="main_left">
+			<div class="contents_table">
+				<div class="titlecsmid amend_link">
+					<span class="title_consignee_notify">Consignee</span>
+					<div class="pi_amend_form">
+	<a href="https://mypage.beforward.jp/order/pi_change_request/3142892" target="_blank" class="change-consignee-link">
+		<i class="icon-mail"></i> Request Invoice Update
+	</a>
+</div>
+
+				</div>
+				<table class="listcs" summary="">
+					<tbody>
+						<tr class="odd">
+							<th>Name</th>
+							<td>MAX DRIVE UG LIMITED</td>
+						</tr>
+						<tr class="even">
+							<th>Address</th>
+							<td>Crown House, Kampala</td>
+						</tr>
+						<tr class="odd">
+							<th>City</th>
+							<td>Kampala</td>
+						</tr>
+						<tr class="even">
+							<th>Country</th>
+							<td>Uganda</td>
+						</tr>
+						<tr class="odd">
+							<th>Phone number1</th>
+							<td>+256708914167</td>
+						</tr>
+						<tr class="even">
+							<th>Phone number2</th>
+							<td></td>
+						</tr>
+						<tr class="odd">
+							<th>Phone number3</th>
+							<td></td>
+						</tr>
+						<tr class="even">
+							<th>Fax number</th>
+							<td></td>
+						</tr>
+						<tr class="odd">
+							<th>Cell-phone number / Email</th>
+							<td>maxdriveugandaltd@gmail.com</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div id="main_right">
+			<div class="contents_table">
+				<div class="titlecsmid">Notify party</div>
+				<table class="listcs" summary="">
+					<tbody>
+						<tr class="odd">
+							<th>Name</th>
+							<td>Kenya Transfreight Logistics Ltd</td>
+						</tr>
+						<tr class="even">
+							<th>Address</th>
+							<td>Consolbase Bldg, 2nd Floor Refinery Road, Changamwe</td>
+						</tr>
+						<tr class="odd">
+							<th>City</th>
+							<td>Mombasa</td>
+						</tr>
+						<tr class="even">
+							<th>Country</th>
+							<td>Kenya</td>
+						</tr>
+						<tr class="odd">
+							<th>Phone number1</th>
+							<td>+254 731 401456</td>
+						</tr>
+						<tr class="even">
+							<th>Phone number2</th>
+							<td>+254 793 599134</td>
+						</tr>
+						<tr class="odd">
+							<th>Phone number3</th>
+							<td>+254 722 746866</td>
+						</tr>
+						<tr class="even">
+							<th>Fax number</th>
+							<td></td>
+						</tr>
+						<tr class="odd">
+							<th>Cell-phone number / Email</th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- *** Notify party end *** -->
+		</div>
+	</div>
+	<div id="main_full">
+		<div class="titlecs">PURCHASED PRODUCT</div>
+		<div id="main_left">
+			<img src="images/3.jpeg" id="imgMain" alt="" width="475px" style="margin: 10px 0 0 0;">
+			<div id="gallery" class="relative01">
+				<div class="thumbnail">
+					<a href="//image-cdn.beforward.jp/large/202408/8456894/1.jpeg" rel="lightbox[roadtrip]">
+						<img src="images/1.jpeg" onmouseover="javascript: changeImg('//image-cdn.beforward.jp/large/202408/8456894/BU121356_1194567d.jpeg');">
+					</a>
+				</div>
+				<div class="thumbnail">
+					<a href="//image-cdn.beforward.jp/large/202408/8456894/2.jpeg" rel="lightbox[roadtrip]">
+						<img src="images/2.jpeg" onmouseover="javascript: changeImg('//image-cdn.beforward.jp/large/202408/8456894/BU121356_1194567e.jpeg');">
+					</a>
+				</div>
+				<div class="thumbnail">
+					<a href="//image-cdn.beforward.jp/large/202408/8456894/3.jpeg" rel="lightbox[roadtrip]">
+						<img src="images/3.jpeg" onmouseover="javascript: changeImg('//image-cdn.beforward.jp/large/202408/8456894/BU121356_1194567f.jpeg');">
+					</a>
+				</div>
+				<div class="thumbnail">
+					<a href="//image-cdn.beforward.jp/large/202408/8456894/4.jpeg" rel="lightbox[roadtrip]">
+						<img src="images/4.jpeg" onmouseover="javascript: changeImg('//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945680.jpeg');">
+					</a>
+				</div>
+			<!--	<div class="thumbnail">
+					<a href="//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945681.jpeg" rel="lightbox[roadtrip]">
+						<img src="images/BU121356_11945681.jpeg" onmouseover="javascript: changeImg('//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945681.jpeg');">
+					</a>
+				</div>
+				<div class="thumbnail">
+					<a href="//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945682.jpeg" rel="lightbox[roadtrip]">
+						<img src="images/BU121356_11945682.jpeg" onmouseover="javascript: changeImg('//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945682.jpeg');">
+					</a>
+				</div>
+				<div class="thumbnail">
+					<a href="//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945683.jpeg" rel="lightbox[roadtrip]">
+						<img src="images/BU121356_11945683.jpeg" onmouseover="javascript: changeImg('//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945683.jpeg');">
+					</a>
+				</div>
+				<div class="thumbnail">
+					<a href="//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945684.jpeg" rel="lightbox[roadtrip]">
+						<img src="images/BU121356_11945684.jpeg" onmouseover="javascript: changeImg('//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945684.jpeg');">
+					</a>
+				</div>
+				<div class="thumbnail">
+					<a href="//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945685.jpeg" rel="lightbox[roadtrip]">
+						<img src="images/BU121356_11945685.jpeg" onmouseover="javascript: changeImg('//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945685.jpeg');">
+					</a>
+				</div>
+				<div class="thumbnail">
+					<a href="//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945686.jpeg" rel="lightbox[roadtrip]">
+						<img src="images/BU121356_11945686.jpeg" onmouseover="javascript: changeImg('//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945686.jpeg');">
+					</a>
+				</div>
+				<div class="thumbnail">
+					<a href="//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945687.jpeg" rel="lightbox[roadtrip]">
+						<img src="images/BU121356_11945687.jpeg" onmouseover="javascript: changeImg('//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945687.jpeg');">
+					</a>
+				</div>
+				<div class="thumbnail">
+					<a href="//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945688.jpeg" rel="lightbox[roadtrip]">
+						<img src="images/BU121356_11945688.jpeg" onmouseover="javascript: changeImg('//image-cdn.beforward.jp/large/202408/8456894/BU121356_11945688.jpeg');">
+					</a>
+				</div>
+			</div> --> <!-- *** PHOTO-END *** -->
+
+		</div>
+		<div id="main_right">
+			<div class="contents_table">
+				<div class="titlecsmid">2019�&nbsp;TOYOTA�&nbsp;Hilux</div>
+				<table class="listcs" summary="">
+					<tbody>
+						<tr class="odd">
+							<th>Reference No</th>
+							<td>BU121356</td>
+						</tr>
+						<tr class="even">
+							<th>Mileage</th>
+							<td>
+																	50,000 km
+															</td>
+						</tr>
+						<tr class="odd">
+							<th>Model Code</th>
+							<td>0</td>
+						</tr>
+						<tr class="even">
+							<th><span class="orange bold">Registration Year/Month</span></th>
+							<td>2019/0</td>
+						</tr>
+						<tr class="odd">
+							<th><span class="green bold">Manufacture�&nbsp;Year/month</span></th>
+							<td>
+																	-
+															</td>
+						</tr>
+						<tr>
+							<td class="years-td" colspan="2">
+
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" class="center">
+								<div class="tip"><span class="black">You need to look up the Import Regulation of your country for this vehicle.</span></div>
+							</td>
+						</tr>
+						<tr class="odd">
+							<th>Model Grade</th>
+							<td>2.4</td>
+						</tr>
+						<tr class="even">
+							<th>Chassis #</th>
+							<td>MR0CC8CD600691280</td>
+						</tr>
+						<tr class="odd">
+							<th>Engine Size</th>
+							<td>2393</td>
+						</tr>
+						<tr class="even">
+							<th>Drive</th>
+							<td>2wheel drive</td>
+						</tr>
+						<tr class="odd">
+							<th>Ext. Color</th>
+							<td>White</td>
+						</tr>
+						<tr class="even">
+							<th>Steering</th>
+							<!-- 202401B-024_オートサーバー車両連携 ハンドルがブランク時ASK表示対応 -->
+							<td>Right</td>
+
+						</tr>
+						<tr class="odd">
+							<th>Transmission</th>
+							<td>Automatic</td>
+						</tr>
+						<tr class="even">
+							<th>Fuel</th>
+							<td>Diesel</td>
+						</tr>
+						<tr class="odd">
+							<th>Seats</th>
+							<td>5</td>
+						</tr>
+						<tr class="even">
+							<th>Doors</th>
+							<td>4</td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+			<!-- *** Purchased product-END *** -->
+			<div class="contents_cs">
+				<div class="titlecsmid">OPTIONS</div>
+				<div class="optioncs">A/C | Airbag | Power Steering | Power Window | Power Mirror | Turbo | ABS | 2WD | AM/FM Radio | Jack | Spare Tire | Wheel Spanner | Fog Lights</div>
+				<div style="clear: both;"></div>
+				<div style="margin-left:15px; text-align:left;">
+					<a href="/vehicle/image_download"><img src="images/icon_zip.png"></a>
+					<a href="/vehicle/image_download">Download pictures in a single zip file</a>
+									</div>
+			</div>
+			<!-- *** OPTIONS-END *** -->
+		</div>
+	</div>
+</div><!-- *** INFORMATION-END *** -->
+
+		<!-- *** container_full-END *** -->
+		<div id="footer_cs"><p class="copy">© Copyright 2024 BE FORWARD CO.,LTD. All rights reserved.[L]</p></div>
+		<!-- *** footer_cs-END *** -->
+	</div>
+	<!-- *** outline-END *** -->
+	<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 990576704;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="js/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/990576704/?value=0&guid=ON&script=0"/>
+</div>
+</noscript>
+
+
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W6WQ7N"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W6WQ7N');</script>
+<!-- End Google Tag Manager -->
+
+</body><!-- Google Tag Manager --></html>
